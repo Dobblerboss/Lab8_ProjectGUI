@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="studs@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.17">
+    <root id="1">
+      <ServerVersion>12.3</ServerVersion>
+      <StartupTime>1592149846</StartupTime>
+    </root>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13318</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="studs">
+      <ObjectId>16393</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>1882</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Relations>sequence|table|16520|16522|1
+sequence|table|16646|16648|2
+sequence|table|16504|16506|1
+</Relations>
+    </database>
+    <role id="4" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="13" parent="3" name="information_schema">
+      <ObjectId>13018</ObjectId>
+      <StateNumber>282</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="3" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>275</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="15" parent="3" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>276</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>1883</IntrospectionStateNumber>
+      <Current>1</Current>
+    </schema>
+    <access-method id="16" parent="3" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
+    </access-method>
+    <access-method id="17" parent="3" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="18" parent="3" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="19" parent="3" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="3" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="3" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="3" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="23" parent="3" name="plpgsql">
+      <ObjectId>13304</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>437</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="24" parent="15" name="coordinates_id_coordinates_seq">
+      <ObjectId>16504</ObjectId>
+      <StateNumber>1853</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="25" parent="15" name="flats_id_seq">
+      <ObjectId>16646</ObjectId>
+      <StateNumber>1851</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="26" parent="15" name="house_id_house_seq">
+      <ObjectId>16520</ObjectId>
+      <StateNumber>1855</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="27" parent="15" name="coordinates">
+      <ObjectId>16506</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>587</StateNumber>
+    </table>
+    <table id="28" parent="15" name="flats">
+      <ObjectId>16648</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>637</StateNumber>
+    </table>
+    <table id="29" parent="15" name="furnish">
+      <ObjectId>16512</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>587</StateNumber>
+    </table>
+    <table id="30" parent="15" name="house">
+      <ObjectId>16522</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>587</StateNumber>
+    </table>
+    <table id="31" parent="15" name="log_pas">
+      <ObjectId>16679</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>639</StateNumber>
+    </table>
+    <table id="32" parent="15" name="relation">
+      <ObjectId>16687</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>639</StateNumber>
+    </table>
+    <table id="33" parent="15" name="transport">
+      <ObjectId>16531</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>587</StateNumber>
+    </table>
+    <column id="34" parent="27" name="id_coordinates">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>581</StateNumber>
+      <DefaultExpression>nextval(&apos;coordinates_id_coordinates_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="35" parent="27" name="x">
+      <Position>2</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>581</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="36" parent="27" name="y">
+      <Position>3</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>581</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <index id="37" parent="27" name="coordinates_pkey">
+      <ObjectId>16510</ObjectId>
+      <StateNumber>581</StateNumber>
+      <ColNames>id_coordinates</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="38" parent="27" name="coordinates_pkey">
+      <ObjectId>16511</ObjectId>
+      <StateNumber>581</StateNumber>
+      <ColNames>id_coordinates</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>coordinates_pkey</UnderlyingIndexName>
+    </key>
+    <column id="39" parent="28" name="key">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="40" parent="28" name="id">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <DefaultExpression>nextval(&apos;flats_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="41" parent="28" name="name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="42" parent="28" name="id_coordinates">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>637</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="43" parent="28" name="creation_date">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="44" parent="28" name="area">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="45" parent="28" name="number_of_rooms">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="46" parent="28" name="new">
+      <Position>8</Position>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>637</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="47" parent="28" name="id_furnish">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>637</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="48" parent="28" name="id_transport">
+      <Position>10</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>637</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="49" parent="28" name="id_house">
+      <Position>11</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>637</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="50" parent="28" name="flats_pkey">
+      <ObjectId>16655</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="51" parent="28" name="flats_id_key">
+      <ObjectId>16657</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="28" name="flats_pkey">
+      <ObjectId>16656</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>key</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>flats_pkey</UnderlyingIndexName>
+    </key>
+    <key id="53" parent="28" name="flats_id_key">
+      <ObjectId>16658</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>flats_id_key</UnderlyingIndexName>
+    </key>
+    <foreign-key id="54" parent="28" name="flats_id_coordinates_fkey">
+      <ObjectId>16659</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>id_coordinates</ColNames>
+      <RefTableId>16506</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>coordinates</RefTableName>
+      <RefKeyName>coordinates_pkey</RefKeyName>
+      <RefColNames>id_coordinates</RefColNames>
+    </foreign-key>
+    <foreign-key id="55" parent="28" name="flats_id_furnish_fkey">
+      <ObjectId>16664</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>id_furnish</ColNames>
+      <RefTableId>16512</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>furnish</RefTableName>
+      <RefKeyName>furnish_pkey</RefKeyName>
+      <RefColNames>id_furnish</RefColNames>
+    </foreign-key>
+    <foreign-key id="56" parent="28" name="flats_id_transport_fkey">
+      <ObjectId>16669</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>id_transport</ColNames>
+      <RefTableId>16531</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>transport</RefTableName>
+      <RefKeyName>transport_pkey</RefKeyName>
+      <RefColNames>id_transport</RefColNames>
+    </foreign-key>
+    <foreign-key id="57" parent="28" name="flats_id_house_fkey">
+      <ObjectId>16674</ObjectId>
+      <StateNumber>637</StateNumber>
+      <ColNames>id_house</ColNames>
+      <RefTableId>16522</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>house</RefTableName>
+      <RefKeyName>house_pkey</RefKeyName>
+      <RefColNames>id_house</RefColNames>
+    </foreign-key>
+    <column id="58" parent="29" name="id_furnish">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>582</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="59" parent="29" name="furnish_value">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>582</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="60" parent="29" name="furnish_pkey">
+      <ObjectId>16518</ObjectId>
+      <StateNumber>582</StateNumber>
+      <ColNames>id_furnish</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="61" parent="29" name="furnish_pkey">
+      <ObjectId>16519</ObjectId>
+      <StateNumber>582</StateNumber>
+      <ColNames>id_furnish</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>furnish_pkey</UnderlyingIndexName>
+    </key>
+    <column id="62" parent="30" name="id_house">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <DefaultExpression>nextval(&apos;house_id_house_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="63" parent="30" name="house_name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="64" parent="30" name="year">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="65" parent="30" name="number_of_floors">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="66" parent="30" name="house_pkey">
+      <ObjectId>16529</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>id_house</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="67" parent="30" name="house_pkey">
+      <ObjectId>16530</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>id_house</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>house_pkey</UnderlyingIndexName>
+    </key>
+    <column id="68" parent="31" name="login">
+      <Position>1</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>638</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="69" parent="31" name="password">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>638</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="70" parent="31" name="log_pas_pkey">
+      <ObjectId>16685</ObjectId>
+      <StateNumber>638</StateNumber>
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="71" parent="31" name="log_pas_pkey">
+      <ObjectId>16686</ObjectId>
+      <StateNumber>638</StateNumber>
+      <ColNames>login</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>log_pas_pkey</UnderlyingIndexName>
+    </key>
+    <column id="72" parent="32" name="login">
+      <Position>1</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <StateNumber>639</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="73" parent="32" name="key">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>639</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="74" parent="32" name="relation_login_fkey">
+      <ObjectId>16690</ObjectId>
+      <StateNumber>639</StateNumber>
+      <ColNames>login</ColNames>
+      <RefTableId>16679</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>log_pas</RefTableName>
+      <RefKeyName>log_pas_pkey</RefKeyName>
+      <RefColNames>login</RefColNames>
+    </foreign-key>
+    <foreign-key id="75" parent="32" name="relation_key_fkey">
+      <ObjectId>16695</ObjectId>
+      <StateNumber>639</StateNumber>
+      <ColNames>key</ColNames>
+      <RefTableId>16648</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>flats</RefTableName>
+      <RefKeyName>flats_pkey</RefKeyName>
+      <RefColNames>key</RefColNames>
+    </foreign-key>
+    <column id="76" parent="33" name="id_transport">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>584</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="77" parent="33" name="transport_value">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>584</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="78" parent="33" name="transport_pkey">
+      <ObjectId>16537</ObjectId>
+      <StateNumber>584</StateNumber>
+      <ColNames>id_transport</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="79" parent="33" name="transport_pkey">
+      <ObjectId>16538</ObjectId>
+      <StateNumber>584</StateNumber>
+      <ColNames>id_transport</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>transport_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
